@@ -21,4 +21,4 @@ $ git clone https://github.com/bydmm/singo
 
 ## 许可协议
 
-MIT - 允许各种用途
+MIT - 允许各种用途。
