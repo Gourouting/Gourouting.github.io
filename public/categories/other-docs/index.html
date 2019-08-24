@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head><meta name="generator" content="Hexo 3.9.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+
+    
+      <link rel="icon" href="/favicon.ico">
+    
+
+    <title>
+        
+          Singo
+        
+    </title>
+
+    <!-- theme css & js -->
+    <link rel="stylesheet" href="/css/spectre.min.css">
+    <link rel="stylesheet" href="/css/spectre-exp.min.css">
+    <link rel="stylesheet" href="/css/spectre-icons.min.css">
+    <link rel="stylesheet" href="/css/spectre_custom.css">
+    <link rel="stylesheet" href="/css/book.css">
+    <script src="/js/book.js"></script>
+
+    <!-- tocbot -->
+    <script src="/js/tocbot.min.js"></script>
+    <link rel="stylesheet" href="/css/tocbot.css">
+    
+    
+</head>
+
+<body>
+
+<div class="container">
+  <div class="book-container">
+    <div class="columns">
+      <div class="col-2 hide-lg left">
+        <div class="book-sidebar">
+  <h4 class="site-meta">
+    <a href="/">Singo</a>
+  </h4>
+  <div class="sidebar-content">
+    <ul>
+<li><a href="/">Singo简介</a></li>
+</ul>
+<h2 id="快速指引"><a href="#快速指引" class="headerlink" title="快速指引 "></a>快速指引 <a id="quick-guide"></a></h2><ul>
+<li><a href="/quick-guide/download.html">下载安装</a></li>
+<li><a href="/quick-guide/package-name.html">修改包名</a></li>
+<li><a href="/quick-guide/set-env.html">配置环境变量来连接数据库</a></li>
+<li><a href="/quick-guide/run.html">运行项目</a></li>
+</ul>
+<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料 "></a>参考资料 <a id="other-docs"></a></h2><ul>
+<li><a href="/other-docs/how-to-set-env.html">如何设置环境变量</a></li>
+</ul>
+
+  </div>
+</div>
+
+<script src="/js/book-sidebar.js"></script>
+      </div>
+
+      <div class="column col-8 col-lg-12 middle">
+        <div class="book-content">
+          <div class='book-archive'>
+  <!-- Title -->
+  
+    <h2>Categories</h2>
+  
+
+  
+    <!-- Split post by year -->
+    
+  
+
+  
+      <div class="book-archive-years">
+          <ul class="archive-list-item">
+          
+              <li>
+                <span>2019-08-24</span>
+                <a href="/other-docs/how-to-set-env.html">
+                  Untitled
+                </a>
+              </li>
+          
+          </ul>
+      </div>
+  
+
+  
+</div>
+        </div>
+      </div>
+
+      <div class="column col-2 hide-lg right">
+        <div class="book-toc">
+  <div class="book-tocbot">
+  </div>
+  <div class="book-tocbot-menu">
+    <a class="book-toc-expand" onclick="expand_toc()">Expand all</a>
+    <a onclick="go_top()">Back to top</a>
+    <a onclick="go_bottom()">Go to bottom</a>
+  </div>
+</div>
+
+<script>
+tocbot.init({
+  tocSelector: '.book-tocbot',
+  contentSelector: '.book-post',
+  headingSelector: 'h1, h2, h3, h4, h5',
+  collapseDepth: 2,
+  orderedList: false,
+  scrollSmooth: false,
+});
+
+function expand_toc(){
+  var b = document.querySelector(".book-toc-expand");
+  tocbot.init({
+    tocSelector: '.book-tocbot',
+    contentSelector: '.book-post',
+    headingSelector: 'h1, h2, h3, h4, h5',
+    collapseDepth: 6,
+    orderedList: false,
+    scrollSmooth: false,
+  });
+  b.setAttribute("onclick", "collapse_toc()");
+  b.innerHTML = "Collapse all"
+}
+
+function collapse_toc(){
+  var b = document.querySelector(".book-toc-expand");
+  tocbot.init({
+    tocSelector: '.book-tocbot',
+    contentSelector: '.book-post',
+    headingSelector: 'h1, h2, h3, h4, h5',
+    collapseDepth: 2,
+    orderedList: false,
+    scrollSmooth: false,
+  });
+  b.setAttribute("onclick", "expand_toc()");
+  b.innerHTML = "Expand all"
+}
+
+function go_top() {
+  window.scrollTo(0, 0);
+}
+
+function go_bottom() {
+  window.scrollTo(0, document.body.scrollHeight);
+}
+
+</script>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
