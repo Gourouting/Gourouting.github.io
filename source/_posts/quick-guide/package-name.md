@@ -8,7 +8,7 @@ categories: quick-guide
 
 包名在项目的go.mod文件中
 
-```go
+```bash
 module singo
 
 go 1.12
@@ -28,13 +28,13 @@ require (
 
 你需要把第一行的
 
-```go
+```bash
 module singo
 ```
 
 修改为
 
-```go
+```bash
 module giligili
 ```
 

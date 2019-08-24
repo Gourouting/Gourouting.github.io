@@ -99,25 +99,14 @@
 
 <div class="book-post">
   <h1 id="修改包名"><a href="#修改包名" class="headerlink" title="修改包名"></a>修改包名</h1><h3 id="修改go-mod文件"><a href="#修改go-mod文件" class="headerlink" title="修改go.mod文件"></a>修改go.mod文件</h3><p>包名在项目的go.mod文件中</p>
-<pre><code class="go">module singo
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">module singo</span><br><span class="line"></span><br><span class="line">go 1.12</span><br><span class="line"></span><br><span class="line">require (</span><br><span class="line">	github.com/gin-contrib/cors v1.3.0</span><br><span class="line">	github.com/gin-contrib/sessions v0.0.0-20190512062852-3cb4c4f2d615</span><br><span class="line">	github.com/gin-gonic/gin v1.4.0</span><br><span class="line">	github.com/go-redis/redis v6.15.3+incompatible</span><br><span class="line">	github.com/jinzhu/gorm v1.9.10</span><br><span class="line">	github.com/joho/godotenv v1.3.0</span><br><span class="line">	golang.org/x/crypto v0.0.0-20190701094942-4def268fd1a4</span><br><span class="line">	gopkg.in/go-playground/validator.v8 v8.18.2</span><br><span class="line">	gopkg.in/yaml.v2 v2.2.2</span><br><span class="line">)</span><br></pre></td></tr></table></figure>
 
-go 1.12
-
-require (
-    github.com/gin-contrib/cors v1.3.0
-    github.com/gin-contrib/sessions v0.0.0-20190512062852-3cb4c4f2d615
-    github.com/gin-gonic/gin v1.4.0
-    github.com/go-redis/redis v6.15.3+incompatible
-    github.com/jinzhu/gorm v1.9.10
-    github.com/joho/godotenv v1.3.0
-    golang.org/x/crypto v0.0.0-20190701094942-4def268fd1a4
-    gopkg.in/go-playground/validator.v8 v8.18.2
-    gopkg.in/yaml.v2 v2.2.2
-)</code></pre>
 <p>你需要把第一行的</p>
-<pre><code class="go">module singo</code></pre>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">module singo</span><br></pre></td></tr></table></figure>
+
 <p>修改为</p>
-<pre><code class="go">module giligili</code></pre>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">module giligili</span><br></pre></td></tr></table></figure>
+
 <p>这样你的包名就修改完成了</p>
 
 </div>
